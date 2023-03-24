@@ -16,7 +16,7 @@
     <div class="col-lg-5">
       <main class="form-registration w-100 m-auto">
         <h1 class="h3 mb-3 fw-normal text-center">Registration Form</h1>
-        <form action="/register" method="post">
+        <form action="/trex1diath/register" method="post">
         @csrf
           {{-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> --}}
           <div class="form-floating">
@@ -38,15 +38,6 @@
               @enderror
             </div>
           <div class="form-floating">
-            <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" required value="{{ old('email') }}">
-            <label for="email" class="text-black">Email address</label>
-            @error('email')
-            <div class="invalid-feedback">
-              {{ $message }}
-            </div>
-            @enderror
-          </div>
-          <div class="form-floating">
             <input type="password" name="password" class="form-control rounded-bottom  @error('password') is-invalid @enderror" id="password" placeholder="Password" required >
             <label for="password" class="text-black">Password</label>
             @error('password')
@@ -64,7 +55,7 @@
           <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
           {{-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p> --}}
         </form>
-        <small class="d-block text-center mt-2">already registered? <a href="/login">Login Now!</a></small>
+        <small class="d-block text-center mt-2">already registered? <a href="/trex1diath/login">Login Now!</a></small>
       </main>
     </div>
   </div>

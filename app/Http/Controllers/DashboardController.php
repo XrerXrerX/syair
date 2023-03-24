@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pasaran;
+use App\Models\Syair;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
+
 
 class DashboardController extends Controller
 {
@@ -11,7 +15,11 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.posts.index', [
+            // 'posts' => Syair::where('user_id', auth()->user()->id)->get()
+            'posts' => Syair::paginate(18)
+
+        ]);
     }
 
     /**
@@ -19,7 +27,9 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.posts.create', [
+            'pasarans' => Pasaran::all()
+        ]);
     }
 
     /**
@@ -60,5 +70,11 @@ class DashboardController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
     }
 }

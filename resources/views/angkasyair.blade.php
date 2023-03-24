@@ -20,7 +20,7 @@
         </p>
         <div class="col">
           <div class="card bg-dark">
-            @if (request('nm_psr') === 'cambodia')
+            {{-- @if (request('nm_psr') === 'cambodia')
             <img src="/img/inner/cmd.png" class="card-img-top" alt="...">
             @elseif (request('nm_psr') === 'sydney')
             <img src="/img/inner/syd.png" class="card-img-top"  alt="...">
@@ -36,11 +36,11 @@
             <img src="/img/inner/taiwan.png" class="card-img-top" alt="...">
             @else
             <img src="/img/ps/hk.png" class="card-img-top" alt="...">
-            @endif
-            {{-- <img src="/img/1.png" class="card-img-top" alt="..."> --}}
-            <div class="card-body">
-              <h5 class="card-title text-center">Angka Syair : {{ strtoupper($title) }} </h5>
-              <p class="text-center px-0 mx-0 ">
+            @endif --}}
+            <img src="{{ $syair->image }}" class="card-img-top" alt="...">
+            <div class="card-body p-0 m-0">
+              <p class="text-center py-2 m-0 ">SYAIR {{ strtoupper($title) }} - 
+              
                 @if($dayName == 'Sunday')
                 {{ 'MINGGU' }}
              @elseif($dayName == 'Monday')

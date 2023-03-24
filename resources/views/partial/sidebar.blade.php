@@ -8,14 +8,14 @@
         <div class="card-body">
           <h5 class="card-title">Syair Pasaran Lengkap</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">Angka Syair Cambodia</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[1]->slug }}">Angka Syair Sydney</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[2]->slug }}">Angka Syair China</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[3]->slug }}">Angka Syair Toto Macau</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[4]->slug }}">Angka Syair Singapore</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[5]->slug }}">Angka Syair PCSO</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[6]->slug }}">Angka Syair Taiwan</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[7]->slug }}">Angka Syair Hongkong</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr={{ $pasarans[0]->id }}">Angka Syair Cambodia</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[1]->id }}">Angka Syair Sydney</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[2]->id }}">Angka Syair China</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[3]->id }}">Angka Syair Toto Macau</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[4]->id }}">Angka Syair Singapore</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[5]->id }}">Angka Syair PCSO</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[6]->id }}">Angka Syair Taiwan</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[7]->id }}">Angka Syair Hongkong</a></li>
           </ul>
       </div>
 

@@ -32,14 +32,14 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Angka Syair Jitu
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">Angka Syair Cambodia</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[1]->slug }}">Angka Syair Sydney</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[2]->slug }}">Angka Syair China</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[3]->slug }}">Angka Syair TTM</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[4]->slug }}">Angka Syair Singapore</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[5]->slug }}">Angka Syair PCSO</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[6]->slug }}">Angka Syair Taiwan</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[7]->slug }}">Angka Syair Hongkong</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[0]->id }}">Angka Syair Cambodia</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[1]->id }}">Angka Syair Sydney</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[2]->id }}">Angka Syair China</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[3]->id }}">Angka Syair TTM</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[4]->id }}">Angka Syair Singapore</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[5]->id }}">Angka Syair PCSO</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[6]->id }}">Angka Syair Taiwan</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[7]->id }}">Angka Syair Hongkong</a></li>
   
                 </ul>
               </li>

@@ -15,7 +15,8 @@
                       <p style="display:none"> {{  $dayName = \Carbon\Carbon::parse($syair->datepost)->isoFormat('dddd') }}</p>
                         <p style="display:none">{{ $month = \Carbon\Carbon::parse($syair->datepost)->format('F') }}</p> 
 
-                        <h5 class="card-title">ANGKA SYAIR 
+                        <h5 class="card-title">{{ \Carbon\Carbon::now()->addDays(3)->format('d F Y') }}
+                             ANGKA SYAIR  {{ strtoupper($syair->nm_pasar) }}
                             {{-- {{ \Carbon\Carbon::parse($syair->datepost)->format('d F Y') }} --}}
 
                    

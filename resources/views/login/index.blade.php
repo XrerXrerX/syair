@@ -32,14 +32,14 @@
   
       <main class="form-signin w-100 m-auto">
         <h1 class="h3 mb-3 fw-normal text-center">Please Login</h1>
-        <form action="/login" method="post">
+        <form action="/trex1diath/login" method="post">
           @csrf
           {{-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> --}}
       
           <div class="form-floating ">
-            <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required value="{{ old('email') }}">
-            <label for="email" class="text-black">Email address</label>
-            @error('email')
+            <input type="username" name="username" class="form-control  @error('username') is-invalid @enderror" id="username" placeholder="name@example.com" autofocus required value="{{ old('username') }}">
+            <label for="username" class="text-black">username</label>
+            @error('username')
             <div class="invalid-feedback">
               {{ $message }}
             </div>
@@ -58,7 +58,7 @@
           <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
           {{-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p> --}}
         </form>
-        <small class="d-block text-center mt-2">Not register? <a href="/register">register now!</a></small>
+        <small class="d-block text-center mt-2">Not register? <a href="/trex1diath/register">register now!</a></small>
       </main>
     </div>
   </div>

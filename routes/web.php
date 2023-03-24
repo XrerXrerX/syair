@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PasaranController;
 use App\Http\Controllers\SyairController;
 use App\Http\Controllers\LoginController;
@@ -27,9 +28,11 @@ use Illuminate\Support\Str;
 
 Route::get('/', function () {
 
+
     return view('home', [
         'pasarans' => Pasaran::all(),
-        'syairs' => Syair::paginate(7)
+        'syairs' => Syair::paginate(7),
+
 
     ]);
 });
@@ -40,14 +43,16 @@ Route::get('/angkasyair', [PasaranController::class, 'index']);
 
 Route::get('/syair/{syair:datepost}', [SyairController::class, 'show']);
 
-Route::get('/klajsdiojqioqwio0uaksldj/id9d29', [LoginController::class, 'index']);
 
-Route::get('/klajsdiojqioqwio0uaksldj/id9d29', [LoginController::class, 'index']);
+Route::get('/trex1diath/login', [LoginController::class, 'index']);
+Route::post('/trex1diath/login', [LoginController::class, 'authenticate']);
+
+Route::get('/trex1diath/register', [RegisterController::class, 'index']);
+Route::post('/trex1diath/register', [RegisterController::class, 'store']);
 
 
-Route::get('/klajsdiojqioqwio0uaksldj/id9d29/register', [RegisterController::class, 'index']);
 
-
-Route::get('/dashboard', function () {
+Route::get('/trex1diath/dashboard', function () {
     return view('dashboard.index');
 });
+Route::resource('/trex1diath/dashboard/posts', DashboardController::class);
