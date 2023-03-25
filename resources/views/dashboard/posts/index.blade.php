@@ -33,10 +33,9 @@
           <td>{{ $post->datepost }}</td>
           <td>
               {{-- <a href="/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye" class="align-text-bottom"></span></a> --}}
-              <a href="/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit" class="align-text-bottom">edit</span></a>
+              <a href="/trex1diath/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit" class="align-text-bottom">edit</span></a>
 
-              <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
-               
+              <form action="/trex1diath/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
               @method('delete')
               @csrf
               <button class="badge bg-danger border-0" onclick="return confirm('are you sure ?')"><span data-feather="x-circle" class="align-text-bottom"></span></button>

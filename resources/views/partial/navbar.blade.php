@@ -5,12 +5,12 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide mb-1" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/2.png" class="d-block w-100" alt="...">
+              <img src="/img/22.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="/img/2.png" class="d-block w-100" alt="...">
+            <div class="/img/22.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/2.png" class="d-block w-100" alt="...">
+              <img src="/img/22.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
         </div>
@@ -23,7 +23,7 @@
           </button>
        
        
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item ">
                 <a class="nav-link" href="/">HOME | </a>
@@ -32,14 +32,18 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Angka Syair Jitu
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[0]->id }}">Angka Syair Cambodia</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[1]->id }}">Angka Syair Sydney</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[2]->id }}">Angka Syair China</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[3]->id }}">Angka Syair TTM</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[4]->id }}">Angka Syair Singapore</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[5]->id }}">Angka Syair PCSO</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[6]->id }}">Angka Syair Taiwan</a></li>
-                  <li><a class="dropdown-item" href="/angkasyair?nm_psr={{ $pasarans[7]->id }}">Angka Syair Hongkong</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=1">Angka Syair ARTA4D</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=2">Angka Syair ARWANATOTO</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=3">Angka Syair DOYANTOTO</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=4">Angka Syair DUO4D</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=5">Angka Syair NEON</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=6">Angka Syair NERO</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=7">Angka Syair ROMA</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=8">Angka Syair TOKE</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=9">Angka Syair JEEP</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=10">Angka Syair TSTOTO</a></li>
+                  <li><a class="dropdown-item" href="/angkasyair?nm_psr=11">Angka Syair ZARA</a></li>
+
   
                 </ul>
               </li>

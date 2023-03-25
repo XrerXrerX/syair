@@ -13,11 +13,22 @@ return new class extends Migration
     {
         Schema::create('syairs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pasaran_id');
+            $table->foreignId('pasaran_id')->nullable();
             $table->foreignId('user_id');
+            $table->foreignId('sts_id')->nullable();
             $table->string('nm_pasar');
             $table->string('slug')->unique();
-            $table->string('image')->nullable();
+            $table->string('artaimage')->nullable();
+            $table->string('arwanaimage')->nullable();
+            $table->string('doyanimage')->nullable();
+            $table->string('duoimage')->nullable();
+            $table->string('jeepimage')->nullable();
+            $table->string('neonimage')->nullable();
+            $table->string('neroimage')->nullable();
+            $table->string('romaimage')->nullable();
+            $table->string('tokeimage')->nullable();
+            $table->string('tsimage')->nullable();
+            $table->string('zaraimage')->nullable();
             $table->date('datepost');
             $table->timestamps();
         });

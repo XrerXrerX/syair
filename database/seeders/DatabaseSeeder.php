@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Sts;
 use App\Models\Pasaran;
 use App\Models\Syair;
 
@@ -32,6 +33,49 @@ class DatabaseSeeder extends Seeder
             'username' => 'keke',
             'password' => bcrypt('password')
         ]);
+
+        Sts::create([
+            'sts' => 'ARTA4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'ARWANATOTO',
+        ]);
+
+        Sts::create([
+            'sts' => 'DOYAN4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'DUOGAMING',
+        ]);
+
+        Sts::create([
+            'sts' => 'NEON4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'NERO4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'ROMA4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'TOKE4D',
+        ]);
+
+        Sts::create([
+            'sts' => 'JEEPTOTO',
+        ]);
+        Sts::create([
+            'sts' => 'TSTOTO',
+        ]);
+        Sts::create([
+            'sts' => 'ZARA4D',
+        ]);
+
 
         Pasaran::create([
             'name' => 'cambodia',
@@ -79,6 +123,8 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '1',
             'datepost' => '2023-03-30',
             'user_id' => '3',
+            'sts_id' => '2',
+            'sts_id' => '1',
             'nm_pasar' => 'cambodia',
             'slug' => 'syair-cambodia',
         ]);
@@ -87,6 +133,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '2',
             'datepost' => '2023-03-29',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'sydney',
             'slug' => 'syair-sydney',
         ]);
@@ -95,6 +142,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '3',
             'datepost' => '2023-03-28',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'china',
             'slug' => 'syair-china',
         ]);
@@ -102,6 +150,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '4',
             'datepost' => '2023-03-27',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'totomacau',
             'slug' => 'toto-macau',
         ]);
@@ -110,6 +159,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '5',
             'datepost' => '2023-03-26',
             'user_id' => '2',
+            'sts_id' => '2',
             'nm_pasar' => 'singapore',
             'slug' => 'syair-singapore',
         ]);
@@ -117,6 +167,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '6',
             'datepost' => '2023-03-25',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'pcso',
             'slug' => 'syair-pcso',
         ]);
@@ -125,6 +176,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '7',
             'datepost' => '2023-03-24',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'taiwan',
             'slug' => 'syair-taiwan',
         ]);
@@ -133,6 +185,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '8',
             'datepost' => '2023-03-23',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'hongkong',
             'slug' => 'syair-hongkong',
         ]);
@@ -146,6 +199,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '1',
             'datepost' => '2023-03-22',
             'user_id' => '3',
+            'sts_id' => '2',
             'nm_pasar' => 'cambodia',
             'slug' => 'syair-cambodia11',
         ]);
@@ -154,6 +208,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '2',
             'datepost' => '2023-03-21',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'sydney',
 
             'slug' => 'syair-sydney11',
@@ -163,6 +218,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '3',
             'datepost' => '2023-03-20',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'china',
             'slug' => 'syair-china11',
         ]);
@@ -170,6 +226,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '4',
             'datepost' => '2023-03-19',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'totomacau',
             'slug' => 'toto-macau11',
         ]);
@@ -178,6 +235,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '5',
             'datepost' => '2023-03-18',
             'user_id' => '2',
+            'sts_id' => '2',
             'nm_pasar' => 'singapore',
             'slug' => 'syair-singapore11',
         ]);
@@ -185,6 +243,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '6',
             'datepost' => '2023-03-17',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'pcso',
             'slug' => 'syair-pcso11',
         ]);
@@ -193,6 +252,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '7',
             'datepost' => '2023-03-16',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'taiwan',
             'slug' => 'syair-taiwan11',
         ]);
@@ -201,6 +261,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '8',
             'datepost' => '2023-03-15',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'hongkong',
             'slug' => 'syair-hongkong11',
         ]);
@@ -209,6 +270,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '1',
             'datepost' => '2023-03-14',
             'user_id' => '3',
+            'sts_id' => '2',
             'nm_pasar' => 'cambodia',
             'slug' => 'syair-cambodia1',
         ]);
@@ -217,6 +279,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '2',
             'datepost' => '2023-03-13',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'sydney',
             'slug' => 'syair-sydney1',
         ]);
@@ -225,6 +288,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '3',
             'datepost' => '2023-03-12',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'china',
             'slug' => 'syair-china1',
         ]);
@@ -232,6 +296,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '4',
             'datepost' => '2023-03-11',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'totomacau',
             'slug' => 'toto-macau1',
         ]);
@@ -240,6 +305,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '5',
             'datepost' => '2023-03-10',
             'user_id' => '2',
+            'sts_id' => '2',
             'nm_pasar' => 'singapore',
             'slug' => 'syair-singapore1',
         ]);
@@ -247,6 +313,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '6',
             'datepost' => '2023-03-09',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'pcso',
             'slug' => 'syair-pcso1',
         ]);
@@ -255,6 +322,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '7',
             'datepost' => '2023-03-08',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'taiwan',
             'slug' => 'syair-taiwan1',
         ]);
@@ -263,6 +331,7 @@ class DatabaseSeeder extends Seeder
             'pasaran_id' => '8',
             'datepost' => '2023-03-07',
             'user_id' => '1',
+            'sts_id' => '2',
             'nm_pasar' => 'hongkong',
             'slug' => 'syair-hongkong1',
         ]);

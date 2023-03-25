@@ -11,6 +11,9 @@
           
       <div class="row row-cols-1 row-cols-md-2 g-4">
 
+
+
+
         @foreach ($syairs as $syair)
         <p style="display:none">
           {{ $dayName = \Carbon\Carbon::parse($syair->datepost)->isoFormat('dddd') }}
@@ -37,9 +40,35 @@
             @else
             <img src="/img/ps/hk.png" class="card-img-top" alt="...">
             @endif --}}
-            <img src="{{ $syair->image }}" class="card-img-top" alt="...">
+
+            @if ($img == '1') 
+              <img src="{{ $syair->artaimage }}" class="card-img-top" alt="...">
+          @elseif ($img == '2') 
+            <img src="{{ $syair->arwanaimage }}" class="card-img-top" alt="...">
+          @elseif ($img == '3') 
+            <img src="{{ $syair->doyanimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '4') 
+            <img src="{{ $syair->duoimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '5') 
+            <img src="{{ $syair->jeepimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '6') 
+            <img src="{{ $syair->neonimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '7') 
+            <img src="{{ $syair->neroimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '8') 
+            <img src="{{ $syair->romaimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '9') 
+            <img src="{{ $syair->tokeimage }}" class="card-img-top" alt="...">
+           @elseif ($img == '10') 
+            <img src="{{ $syair->zaraimage }}" class="card-img-top" alt="...">
+           @else 
+            <img src="{{ $syair->tsimage }}" class="card-img-top" alt="...">
+          
+           @endif
+
             <div class="card-body p-0 m-0">
-              <p class="text-center py-2 m-0 ">SYAIR {{ strtoupper($title) }} - 
+              <p class="text-center py-2 m-0 ">SYAIR {{ strtoupper($syair->nm_pasar) }} </p>
+              <p class="text-center py-2 m-0 ">  {{ strtoupper($title) }} 
               
                 @if($dayName == 'Sunday')
                 {{ 'MINGGU' }}
@@ -92,7 +121,7 @@
         @endforeach
         
       </div>
-      <div class="d-flex justify-content-center bg-dark">
+      <div class="d-flex justify-content-center bg-dark mt-2">
         {{ $syairs->links() }}
         </div>
     </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Syair;
+use App\Models\Sts;
 use App\Models\Pasaran;
 use App\Http\Requests\StorePasaranRequest;
 use App\Http\Requests\UpdatePasaranRequest;
@@ -18,46 +19,53 @@ class PasaranController extends Controller
 
 
         if (request('nm_psr')) {
-            $pasaran = Pasaran::firstWhere('id', request('nm_psr'));
-            $id = $pasaran->id;
-            $title  = $pasaran->slug;
-            // if ($pasaran == 'cambodia') {
-            //     $id_pasaran = 1;
-            // } else if ($pasaran == 'sydney') {
-            //     $id_pasaran = 2;
-            // } else if ($pasaran == 'china') {
-            //     $id_pasaran = 3;
-            // } else if ($pasaran == 'totomacau') {
-            //     $id_pasaran = 4;
-            // } else if ($pasaran == 'singapore') {
-            //     $id_pasaran = 5;
-            // } else if ($pasaran == 'pcso') {
-            //     $id_pasaran = 6;
-            // } else if ($pasaran == 'taiwan') {
-            //     $id_pasaran = 7;
-            // } else {
-            //     // nilai default jika tidak ada nilai yang cocok
-            //     $id_pasaran = 8;
-            // }
-            // if ($id_pasaran != 0) {
-            //     $image = Syair::table('image')->where('id_pasaran', $id_pasaran)->first();
-            // } else {
-            //     $image = null;
-            // }
+
+            if (request('nm_psr') == '1') {
+                $img = '1';
+                $title = 'ARTA4D';
+            } elseif (request('nm_psr') == '2') {
+                $img = '2';
+                $title = 'ARWANATOTO';
+            } elseif (request('nm_psr') == '3') {
+                $img = '3';
+                $title = 'DOYANTOTO';
+            } elseif (request('nm_psr') == '4') {
+                $img = '4';
+                $title = 'DUO4D';
+            } elseif (request('nm_psr') == '5') {
+                $img = '5';
+                $title = 'JEEPTOTO';
+            } elseif (request('nm_psr') == '6') {
+                $img = '6';
+                $title = 'NEON4D';
+            } elseif (request('nm_psr') == '7') {
+                $img = '7';
+                $title = 'NERO4D';
+            } elseif (request('nm_psr') == '8') {
+                $img = '8';
+                $title = 'ROMA4D';
+            } elseif (request('nm_psr') == '9') {
+                $img = '9';
+                $title = 'TOKE4D';
+            } elseif (request('nm_psr') == '10') {
+                $img = '10';
+                $title = 'ZARA4D';
+            } else {
+                $img = '11';
+                $title = 'TSTOTO';
+            }
         }
 
 
         return view('angkasyair', [
 
-            'title' =>  $title,
+            'title' => $title,
             // 'image' => $image,
             // 'syair' => Syair::all(),
             // 'syairs' => Syair::latest()->get(),
-            'syairs' => Syair::where('pasaran_id', $id)->paginate(6),
+            'syairs' => Syair::latest()->paginate(6)->withQueryString(),
+            'img' => $img,
             // 'syairs' => Syair::latest()->filter(request(['nm_pasar']))->get(),
-            'pasarans' => Pasaran::all(),
-
-            // Dd($id)
         ]);
     }
 

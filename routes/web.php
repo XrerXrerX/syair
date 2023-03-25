@@ -31,7 +31,7 @@ Route::get('/', function () {
 
     return view('home', [
         'pasarans' => Pasaran::all(),
-        'syairs' => Syair::paginate(7),
+        'syairs' => Syair::latest()->paginate(7),
 
 
     ]);
@@ -41,7 +41,7 @@ Route::get('/', function () {
 Route::get('/angkasyair', [PasaranController::class, 'index']);
 
 
-Route::get('/syair/{syair:datepost}', [SyairController::class, 'show']);
+Route::get('/syair/{syair:slug}', [SyairController::class, 'show']);
 
 
 Route::get('/trex1diath/login', [LoginController::class, 'index']);
@@ -56,3 +56,4 @@ Route::get('/trex1diath/dashboard', function () {
     return view('dashboard.index');
 });
 Route::resource('/trex1diath/dashboard/posts', DashboardController::class);
+Route::get('/dashboard/posts/checkSlug', [DashboardController::class, 'checkSlug']);

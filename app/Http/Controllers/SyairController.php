@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\StoreSyairRequest;
 use App\Http\Requests\UpdateSyairRequest;
+use Termwind\Components\Dd;
 
 class SyairController extends Controller
 {
@@ -49,7 +50,7 @@ class SyairController extends Controller
 
 
         return view('post', [
-            'syair' => Syair::all(),
+
             'post' => $syair,
             'dayName' => $dayName,
             'month' => $month,
@@ -59,6 +60,7 @@ class SyairController extends Controller
 
 
         ]);
+
 
         // return view('angkasyair', [
         //     'syair' => Syair::all(),

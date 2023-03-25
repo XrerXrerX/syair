@@ -8,14 +8,21 @@
         <div class="card-body">
           <h5 class="card-title">Syair Pasaran Lengkap</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr={{ $pasarans[0]->id }}">Angka Syair Cambodia</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[1]->id }}">Angka Syair Sydney</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[2]->id }}">Angka Syair China</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[3]->id }}">Angka Syair Toto Macau</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[4]->id }}">Angka Syair Singapore</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[5]->id }}">Angka Syair PCSO</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[6]->id }}">Angka Syair Taiwan</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[7]->id }}">Angka Syair Hongkong</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=1">Angka Syair ARTA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=2">Angka Syair ARWANATOTO</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=3">Angka Syair DOYANTOTO</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=4">Angka Syair DUOGAMING</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=5">Angka Syair JEEP</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=9">Angka Syair TOKE4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=6">Angka Syair NEON4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=7">Angka Syair NERO4D</a></li>
+
+
+
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=8">Angka Syair ROMA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=10">Angka Syair ZARA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=11">Angka Syair TSTOTO</a></li>
+
           </ul>
       </div>
 
@@ -23,10 +30,10 @@
         <div class="card-body">
           <h5 class="card-title">Tools L21 Group</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">RTP SLOT</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">Generator Angka</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">Jadwal Pasaran</a></li>
-            <li class="list-group-item"><a href="/angkasyair?nm_psr={{ $pasarans[0]->slug }}">Bukti Jackpot</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr=1">RTP SLOT</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr=2">Generator Angka</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr=3">Jadwal Pasaran</a></li>
+            <li class="list-group-item"><a href="/angkasyair?nm_psr=4">Bukti Jackpot</a></li>
           </ul>
       </div>
 </div>
