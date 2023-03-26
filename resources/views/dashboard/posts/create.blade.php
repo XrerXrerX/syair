@@ -247,6 +247,8 @@
       const tokePreview = document.querySelector('.tokePreview');
       const zaraimage = document.querySelector('#zaraimage');
       const zaraPreview = document.querySelector('.zaraPreview');
+      const tsimage = document.querySelector('#tsimage');
+      const tsPreview = document.querySelector('.tsPreview');
 
 
       if (artaimage.files && artaimage.files[0]) {
@@ -336,6 +338,15 @@ if (zaraimage.files && zaraimage.files[0]) {
       zaraPreview.src = e.target.result;
     }
     reader.readAsDataURL(zaraimage.files[0]);
+  }
+
+  if (tsimage.files && tsimage.files[0]) {
+    tsPreview.style.display ='block';
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      tsPreview.src = e.target.result;
+    }
+    reader.readAsDataURL(tsimage.files[0]);
   }
 }
 

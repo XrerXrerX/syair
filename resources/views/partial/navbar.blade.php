@@ -2,18 +2,19 @@
     <div class="container top-nv">
       <div class="row">
         {{-- <p class="top-nv">Syair L21 | lotto21top.com</p> --}}
-        <div id="carouselExampleSlidesOnly" class="carousel slide mb-1" data-bs-ride="carousel">
+        {{-- <div id="carouselExampleSlidesOnly" class="carousel slide mb-1" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/img/22.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="/img/22.jpg" class="d-block w-100" alt="...">
-            </div>
+            <div class="carousel-item active"> --}}
+              <img src="/img/44.gif" class="d-block w-100" alt="...">
+            {{-- </div>
             <div class="carousel-item">
               <img src="/img/22.jpg" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="/img/44.gif" class="d-block w-100" alt="...">
+            </div>
           </div>
-        </div>
+        </div> --}}
       </div>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
         <div class="container">

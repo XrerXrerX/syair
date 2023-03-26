@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Title;
 use App\Models\User;
 use App\Models\Sts;
 use App\Models\Pasaran;
@@ -17,10 +18,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        Title::create([
+            'title' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis sequi qui eum aperiam ut minus error fuga',
+            'body' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis sequi qui eum aperiam ut minus error fuga esse? Corrupti architecto voluptatem cum aliquam! Perferendis, quisquam nostrum. Quisquam rem sint placeat, facere, consectetur minima maiores minus provident aliquid sit fuga expedita nihil, obcaecati ea in ducimus earum qui eveniet illum. ',
+        ]);
         User::create([
-            'name' => 'kuku',
-            'username' => 'kuku',
-            'password' => bcrypt('password')
+            'name' => 'bostoni',
+            'username' => 'bostoni',
+            'password' => bcrypt('bostoni88'),
+            'is_admin' => '1'
         ]);
 
         User::create([
@@ -29,9 +35,10 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('password')
         ]);
         User::create([
-            'name' => 'keke',
-            'username' => 'keke',
-            'password' => bcrypt('password')
+            'name' => 'kiki',
+            'username' => 'kiki',
+            'password' => bcrypt('Xerq07q9889#'),
+            'is_admin' => '1'
         ]);
 
         Sts::create([
@@ -129,211 +136,211 @@ class DatabaseSeeder extends Seeder
             'slug' => 'syair-cambodia',
         ]);
 
-        Syair::create([
-            'pasaran_id' => '2',
-            'datepost' => '2023-03-29',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'sydney',
-            'slug' => 'syair-sydney',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '2',
+        //     'datepost' => '2023-03-29',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'sydney',
+        //     'slug' => 'syair-sydney',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '3',
-            'datepost' => '2023-03-28',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'china',
-            'slug' => 'syair-china',
-        ]);
-        Syair::create([
-            'pasaran_id' => '4',
-            'datepost' => '2023-03-27',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'totomacau',
-            'slug' => 'toto-macau',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '3',
+        //     'datepost' => '2023-03-28',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'china',
+        //     'slug' => 'syair-china',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '4',
+        //     'datepost' => '2023-03-27',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'totomacau',
+        //     'slug' => 'toto-macau',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '5',
-            'datepost' => '2023-03-26',
-            'user_id' => '2',
-            'sts_id' => '2',
-            'nm_pasar' => 'singapore',
-            'slug' => 'syair-singapore',
-        ]);
-        Syair::create([
-            'pasaran_id' => '6',
-            'datepost' => '2023-03-25',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'pcso',
-            'slug' => 'syair-pcso',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '5',
+        //     'datepost' => '2023-03-26',
+        //     'user_id' => '2',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'singapore',
+        //     'slug' => 'syair-singapore',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '6',
+        //     'datepost' => '2023-03-25',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'pcso',
+        //     'slug' => 'syair-pcso',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '7',
-            'datepost' => '2023-03-24',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'taiwan',
-            'slug' => 'syair-taiwan',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '7',
+        //     'datepost' => '2023-03-24',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'taiwan',
+        //     'slug' => 'syair-taiwan',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '8',
-            'datepost' => '2023-03-23',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'hongkong',
-            'slug' => 'syair-hongkong',
-        ]);
-
-
+        // Syair::create([
+        //     'pasaran_id' => '8',
+        //     'datepost' => '2023-03-23',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'hongkong',
+        //     'slug' => 'syair-hongkong',
+        // ]);
 
 
 
 
-        Syair::create([
-            'pasaran_id' => '1',
-            'datepost' => '2023-03-22',
-            'user_id' => '3',
-            'sts_id' => '2',
-            'nm_pasar' => 'cambodia',
-            'slug' => 'syair-cambodia11',
-        ]);
 
-        Syair::create([
-            'pasaran_id' => '2',
-            'datepost' => '2023-03-21',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'sydney',
 
-            'slug' => 'syair-sydney11',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '1',
+        //     'datepost' => '2023-03-22',
+        //     'user_id' => '3',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'cambodia',
+        //     'slug' => 'syair-cambodia11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '3',
-            'datepost' => '2023-03-20',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'china',
-            'slug' => 'syair-china11',
-        ]);
-        Syair::create([
-            'pasaran_id' => '4',
-            'datepost' => '2023-03-19',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'totomacau',
-            'slug' => 'toto-macau11',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '2',
+        //     'datepost' => '2023-03-21',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'sydney',
 
-        Syair::create([
-            'pasaran_id' => '5',
-            'datepost' => '2023-03-18',
-            'user_id' => '2',
-            'sts_id' => '2',
-            'nm_pasar' => 'singapore',
-            'slug' => 'syair-singapore11',
-        ]);
-        Syair::create([
-            'pasaran_id' => '6',
-            'datepost' => '2023-03-17',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'pcso',
-            'slug' => 'syair-pcso11',
-        ]);
+        //     'slug' => 'syair-sydney11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '7',
-            'datepost' => '2023-03-16',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'taiwan',
-            'slug' => 'syair-taiwan11',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '3',
+        //     'datepost' => '2023-03-20',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'china',
+        //     'slug' => 'syair-china11',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '4',
+        //     'datepost' => '2023-03-19',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'totomacau',
+        //     'slug' => 'toto-macau11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '8',
-            'datepost' => '2023-03-15',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'hongkong',
-            'slug' => 'syair-hongkong11',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '5',
+        //     'datepost' => '2023-03-18',
+        //     'user_id' => '2',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'singapore',
+        //     'slug' => 'syair-singapore11',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '6',
+        //     'datepost' => '2023-03-17',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'pcso',
+        //     'slug' => 'syair-pcso11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '1',
-            'datepost' => '2023-03-14',
-            'user_id' => '3',
-            'sts_id' => '2',
-            'nm_pasar' => 'cambodia',
-            'slug' => 'syair-cambodia1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '7',
+        //     'datepost' => '2023-03-16',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'taiwan',
+        //     'slug' => 'syair-taiwan11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '2',
-            'datepost' => '2023-03-13',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'sydney',
-            'slug' => 'syair-sydney1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '8',
+        //     'datepost' => '2023-03-15',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'hongkong',
+        //     'slug' => 'syair-hongkong11',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '3',
-            'datepost' => '2023-03-12',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'china',
-            'slug' => 'syair-china1',
-        ]);
-        Syair::create([
-            'pasaran_id' => '4',
-            'datepost' => '2023-03-11',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'totomacau',
-            'slug' => 'toto-macau1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '1',
+        //     'datepost' => '2023-03-14',
+        //     'user_id' => '3',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'cambodia',
+        //     'slug' => 'syair-cambodia1',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '5',
-            'datepost' => '2023-03-10',
-            'user_id' => '2',
-            'sts_id' => '2',
-            'nm_pasar' => 'singapore',
-            'slug' => 'syair-singapore1',
-        ]);
-        Syair::create([
-            'pasaran_id' => '6',
-            'datepost' => '2023-03-09',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'pcso',
-            'slug' => 'syair-pcso1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '2',
+        //     'datepost' => '2023-03-13',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'sydney',
+        //     'slug' => 'syair-sydney1',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '7',
-            'datepost' => '2023-03-08',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'taiwan',
-            'slug' => 'syair-taiwan1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '3',
+        //     'datepost' => '2023-03-12',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'china',
+        //     'slug' => 'syair-china1',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '4',
+        //     'datepost' => '2023-03-11',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'totomacau',
+        //     'slug' => 'toto-macau1',
+        // ]);
 
-        Syair::create([
-            'pasaran_id' => '8',
-            'datepost' => '2023-03-07',
-            'user_id' => '1',
-            'sts_id' => '2',
-            'nm_pasar' => 'hongkong',
-            'slug' => 'syair-hongkong1',
-        ]);
+        // Syair::create([
+        //     'pasaran_id' => '5',
+        //     'datepost' => '2023-03-10',
+        //     'user_id' => '2',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'singapore',
+        //     'slug' => 'syair-singapore1',
+        // ]);
+        // Syair::create([
+        //     'pasaran_id' => '6',
+        //     'datepost' => '2023-03-09',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'pcso',
+        //     'slug' => 'syair-pcso1',
+        // ]);
+
+        // Syair::create([
+        //     'pasaran_id' => '7',
+        //     'datepost' => '2023-03-08',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'taiwan',
+        //     'slug' => 'syair-taiwan1',
+        // ]);
+
+        // Syair::create([
+        //     'pasaran_id' => '8',
+        //     'datepost' => '2023-03-07',
+        //     'user_id' => '1',
+        //     'sts_id' => '2',
+        //     'nm_pasar' => 'hongkong',
+        //     'slug' => 'syair-hongkong1',
+        // ]);
     }
 }

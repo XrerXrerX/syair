@@ -9,8 +9,13 @@
 <div class="alert alert-success col-lg-8">
   {{ session('success') }}
 </div>
+@endif
 
-    
+@if(session()->has('loginError'))
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+{{ session('loginError') }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 @endif
 
   <div class="table-responsive col-md-12">
@@ -39,7 +44,6 @@
               @method('delete')
               @csrf
               <button class="badge bg-danger border-0" onclick="return confirm('are you sure ?')"><span data-feather="x-circle" class="align-text-bottom"></span></button>
-
               </form>
         </td>
         </tr>
