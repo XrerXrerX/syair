@@ -121,9 +121,76 @@
         @endforeach
         
       </div>
-      <div class="d-flex justify-content-center bg-dark mt-2">
+      
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination justify-content-center mt-3">
+            @if(request('page') == null)
+                <li class="page-item">
+                    <a class="page-link disabled">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="http://syair.test/">1</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=4">4</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=5">5</a></li>
+
+                <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+                </li>                 
+            @elseif(request('page') == 2 )
+                <li class="page-item">
+                    <a class="page-link" href="http://syair.test/">Previous</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="http://syair.test/">1</a></li>
+                <li class="page-item active"><a class="page-link" href="http://syair.test?page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=4">4</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=5">5</a></li>
+                <li class="page-item">
+                <a class="page-link" href="http://syair.test?page=3">Next</a>
+                </li> 
+                @elseif(request('page') == 3 )
+                <li class="page-item">
+                    <a class="page-link" href="http://syair.test?page=2">Previous</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="http://syair.test/">1</a></li>
+                <li class="page-item "><a class="page-link" href="http://syair.test?page=2">2</a></li>
+                <li class="page-item active"><a class="page-link" href="http://syair.test?page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=4">4</a></li>
+                <li class="page-item"><a class="page-link" href="http://syair.test?page=5">5</a></li>
+                <li class="page-item">
+                <a class="page-link" href="http://syair.test?page=4">Next</a>
+                </li>                       
+            @elseif(request('page') ==4 )
+            <li class="page-item">
+                <a class="page-link" href="http://syair.test?page=3">Previous</a>
+            </li>
+            <li class="page-item "><a class="page-link" href="http://syair.test/">1</a></li>
+            <li class="page-item "><a class="page-link" href="http://syair.test?page=2">2</a></li>
+            <li class="page-item "><a class="page-link" href="http://syair.test?page=3">3</a></li>
+            <li class="page-item active"><a class="page-link" href="http://syair.test?page=4">4</a></li>
+            <li class="page-item"><a class="page-link" href="http://syair.test?page=5">5</a></li>
+            <li class="page-item">
+            <a class="page-link" href="http://syair.test?page=5">Next</a>
+            </li>   
+            @else
+            <li class="page-item">
+                <a class="page-link" href="http://syair.test?page=4">Previous</a>
+            </li>
+            <li class="page-item "><a class="page-link" href="http://syair.test/">1</a></li>
+            <li class="page-item "><a class="page-link" href="http://syair.test?page=2">2</a></li>
+            <li class="page-item "><a class="page-link" href="http://syair.test?page=3">3</a></li>
+            <li class="page-item "><a class="page-link" href="http://syair.test?page=4">4</a></li>
+            <li class="page-item active"><a class="page-link" href="http://syair.test?page=5">5</a></li>
+            <li class="page-item">
+            <a class="page-link disabled">Next</a>               
+            @endif
+        </ul>
+    </nav> 
+    
+      {{-- <div class="d-flex justify-content-center bg-dark mt-2">
         {{ $syairs->links() }}
-        </div>
+        </div> --}}
     </div>
 
   

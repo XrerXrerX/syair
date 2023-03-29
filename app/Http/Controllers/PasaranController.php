@@ -34,27 +34,54 @@ class PasaranController extends Controller
                 $title = 'DUO4D';
             } elseif (request('nm_psr') == '5') {
                 $img = '5';
-                $title = 'JEEPTOTO';
+                $title = 'NEON4D';
             } elseif (request('nm_psr') == '6') {
                 $img = '6';
-                $title = 'NEON4D';
+                $title = 'NERO4D';
             } elseif (request('nm_psr') == '7') {
                 $img = '7';
-                $title = 'NERO4D';
+                $title = 'ROMA4D';
             } elseif (request('nm_psr') == '8') {
                 $img = '8';
-                $title = 'ROMA4D';
+                $title = 'TOKE4D';
             } elseif (request('nm_psr') == '9') {
                 $img = '9';
-                $title = 'TOKE4D';
+                $title = 'JEEPTOTO';
             } elseif (request('nm_psr') == '10') {
                 $img = '10';
-                $title = 'ZARA4D';
+                $title = 'TSTOTO';
             } else {
                 $img = '11';
-                $title = 'TSTOTO';
+                $title = 'ZARA4D';
             }
         }
+
+        $dateposts = Syair::pluck('slug')->toArray();
+        $syairs = [];
+
+        // $postDate = date('d-m-Y', $postDat);
+        $currentDate = strtotime(date('d-m-Y'));
+        $tomorrowDate = strtotime('+1 day', $currentDate);
+        $tomorrowDateFormatted = date('Y-m-d', $tomorrowDate);
+
+
+        foreach ($dateposts as $datepost) {
+            $postDate = substr($datepost, 0, 10);
+
+
+            if ($postDate <= $tomorrowDateFormatted) {
+                // Tampilkan data jika tanggal posting <= tanggal saat ini
+                $syair = Syair::Where('datepost', $postDate)->first();
+                array_push($syairs, $syair);
+            } else {
+                // Tunggu hingga tanggal posting sebelum menampilkan data
+                continue;
+            }
+        }
+
+        $perPage = 8; // Change this to the number of items you want to display per page
+        $currentPage = request()->get('page') ?: 1; // Get the current page from the request, or default to the first page
+        $syai = collect($syairs)->sortByDesc('datepost')->forPage($currentPage, $perPage);
 
 
         return view('angkasyair', [
@@ -63,7 +90,8 @@ class PasaranController extends Controller
             // 'image' => $image,
             // 'syair' => Syair::all(),
             // 'syairs' => Syair::latest()->get(),
-            'syairs' => Syair::latest()->paginate(6)->withQueryString(),
+            // 'syairs' => Syair::latest()->paginate(6)->withQueryString(),
+            'syairs' => $syai,
             'img' => $img,
             // 'syairs' => Syair::latest()->filter(request(['nm_pasar']))->get(),
         ]);

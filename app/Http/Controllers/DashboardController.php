@@ -41,6 +41,7 @@ class DashboardController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
+
             'nm_pasar' => 'required|max:255',
             'slug' => 'required|unique:syairs',
             'artaImage' => 'image|file|max:5046',
@@ -133,7 +134,6 @@ class DashboardController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $syairs = Syair::where('slug', $id)->get();
         $syair = Syair::where('slug', $id)->first();
 
 

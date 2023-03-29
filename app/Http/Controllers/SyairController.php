@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Title;
+
 use App\Models\Syair;
 use App\Models\Pasaran;
 use Illuminate\Http\Request;
@@ -35,6 +37,7 @@ class SyairController extends Controller
     public function store(StoreSyairRequest $request)
     {
         //
+
     }
 
     /**
@@ -44,9 +47,9 @@ class SyairController extends Controller
     {
         $dayName = \Carbon\Carbon::parse($syair->datepost)->isoFormat('dddd');
         $dateN = \Carbon\Carbon::parse($syair->datepost)->format('d');
-
         $month = \Carbon\Carbon::parse($syair->datepost)->format('F');
         $year = \Carbon\Carbon::parse($syair->datepost)->isoFormat('Y');
+
 
 
         return view('post', [
@@ -57,6 +60,7 @@ class SyairController extends Controller
             'dateN' => $dateN,
             'year' => $year,
             'pasarans' => Pasaran::all(),
+            'title' => Title::first()
 
 
         ]);

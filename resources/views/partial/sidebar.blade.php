@@ -8,20 +8,18 @@
         <div class="card-body">
           <h5 class="card-title">Syair Pasaran Lengkap</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=1">Angka Syair ARTA4D</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=2">Angka Syair ARWANATOTO</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=3">Angka Syair DOYANTOTO</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=4">Angka Syair DUOGAMING</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=5">Angka Syair JEEP</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=9">Angka Syair TOKE4D</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=6">Angka Syair NEON4D</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=7">Angka Syair NERO4D</a></li>
-
-
-
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=8">Angka Syair ROMA4D</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=10">Angka Syair ZARA4D</a></li>
-            <li class="list-group-item"> <a href="/angkasyair?nm_psr=11">Angka Syair TSTOTO</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=1&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ARTA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=2&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ARWANATOTO</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=3&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair DOYANTOTO</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=4&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair DUOGAMING</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=5&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair JEEP</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=9&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair TOKE4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=6&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair NEON4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=7&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair NERO4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=8&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ROMA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=8&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ROMA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=10&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ZARA4D</a></li>
+            <li class="list-group-item"> <a href="/angkasyair?nm_psr=11&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair TSTOTO</a></li>
 
           </ul>
       </div>

@@ -8,8 +8,9 @@
       <div class="col-lg-8">
 
 
-        <form method="post" action="/trex1diath/dashboard/admin/{{ $post->id }}" class="mb-5" enctype="multipart/form-data">
+        <form method="post" action="/trex1diath/dashboard/admin/{{ $post->id }}" class="mb-5" >
           @method('put')
+          @csrf
             
 
             <div class="mb-3">

@@ -13,6 +13,9 @@ use App\Http\Resources\UserCollection;
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Pasaran;
+use App\Models\Title;
+use Illuminate\Support\Collection;
+
 use App\Models\Syair;
 use Illuminate\Support\Str;
 
@@ -30,10 +33,42 @@ use Illuminate\Support\Str;
 
 Route::get('/', function () {
 
+    $dateposts = Syair::pluck('slug')->toArray();
+    $syairs = [];
+
+    // Lakukan perulangan pada setiap nilai datepost
+    foreach ($dateposts as $datepost) {
+        $postDate = substr($datepost, 0, 10);
+
+
+
+        // $postDate = date('d-m-Y', $postDat);
+        $currentDate = strtotime(date('d-m-Y'));
+        $tomorrowDate = strtotime('+1 day', $currentDate);
+        $tomorrowDateFormatted = date('Y-m-d', $tomorrowDate);
+        if ($postDate <= $tomorrowDateFormatted) {
+            // Tampilkan data jika tanggal posting <= tanggal saat ini
+            $syair = Syair::Where('slug', $datepost)->first();
+            array_push($syairs, $syair);
+        } else {
+            // Tunggu hingga tanggal posting sebelum menampilkan data
+            continue;
+        }
+    }
+
+    $perPage = 8; // Change this to the number of items you want to display per page
+    $currentPage = request()->get('page') ?: 1; // Get the current page from the request, or default to the first page
+    $syai = collect($syairs)->sortByDesc('datepost')->forPage($currentPage, $perPage);
+
+
+
 
     return view('home', [
         'pasarans' => Pasaran::all(),
-        'syairs' => Syair::latest()->paginate(7),
+        // 'syairs' => Syair::orderBy('datepost', 'desc')->paginate(7),
+        'title' => Title::first(),
+        'syai' => $syai
+
 
 
     ]);

@@ -3,7 +3,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Edit Postingan</h1>`
+    <h1 class="h2">Edit Postingan</h1>
       </div>
       <div class="col-lg-8">
 
@@ -244,8 +244,8 @@
               <label for="zaraimage" class="form-label d-flex justify-content-center">Gambar ZARA</label>
               <input type='hidden' name="oldzaraimage" value="{{ $post->zaraimage }}">
 
-              @if($post->tokeimage)
-              <img src="{{ asset('storage/' . $post->tokeimage) }}" alt="" class="zaraPreview img-fluid d-block mx-auto mb-3 col-sm-2">
+              @if($post->zaraimage)
+              <img src="{{ asset('storage/' . $post->zaraimage) }}" alt="" class="zaraPreview img-fluid d-block mx-auto mb-3 col-sm-2">
               @else
               <img src="" alt="" class="zaraPreview img-fluid mb-3 col-sm-2 mx-auto">
               @endif
