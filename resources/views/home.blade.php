@@ -144,9 +144,10 @@
 
                     
                          merupakan forum kode syair yang menyediakan berbagai macam jenis syair angka HOKI terpercaya hari ini. Kami mengerti bahwasannya setiap pemain di darat maupun di online sangat kesulitan mencari situs forum syair yang menyediakan secara lengkap agar tidak pindah-pindah situs yang pastinya merepotkan. SYAIR L21 GROUP – bekerja sama dengan Forum-Forum Syair Ternama di Indonesia, seperti SYAIR JEEP, SYAIR TS, SYAIR DOYAN, SYAIR ARTA, SYAIR NEON, SYAIR ZARA, SYAIR ROMA SYAIR TOKE, SYAIR NERO dan SYAIR DUOGAMING </p> --}}
-                      <a href="/syair/{{ $syair->slug }}" class="btn btn-danger float-end"> Read More</a>
           
                     </div>
+                    <a href="/syair/{{ $syair->slug }}" class="btn btn-danger float-end"> Read More</a>
+
                 </div>
               </div>
               

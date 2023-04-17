@@ -62,16 +62,18 @@ class PasaranController extends Controller
         // $postDate = date('d-m-Y', $postDat);
         $currentDate = strtotime(date('d-m-Y'));
         $tomorrowDate = strtotime('+1 day', $currentDate);
-        $tomorrowDateFormatted = date('Y-m-d', $tomorrowDate);
+        // $tomorrowDateFormatted = date('Y-m-d', $tomorrowDate);
+        $tomorrowDateFormatted = date('Y-m-d-H-i-s', $tomorrowDate);
+
 
 
         foreach ($dateposts as $datepost) {
-            $postDate = substr($datepost, 0, 10);
+            // $postDate = substr($datepost, 0, 10);
 
 
-            if ($postDate <= $tomorrowDateFormatted) {
+            if ($datepost <= $tomorrowDateFormatted) {
                 // Tampilkan data jika tanggal posting <= tanggal saat ini
-                $syair = Syair::Where('datepost', $postDate)->first();
+                $syair = Syair::Where('slug', $datepost)->first();
                 array_push($syairs, $syair);
             } else {
                 // Tunggu hingga tanggal posting sebelum menampilkan data
@@ -82,7 +84,6 @@ class PasaranController extends Controller
         $perPage = 8; // Change this to the number of items you want to display per page
         $currentPage = request()->get('page') ?: 1; // Get the current page from the request, or default to the first page
         $syai = collect($syairs)->sortByDesc('datepost')->forPage($currentPage, $perPage);
-
 
         return view('angkasyair', [
 

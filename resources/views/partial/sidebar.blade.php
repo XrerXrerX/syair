@@ -4,9 +4,11 @@
         <span class="input-group-text" id="basic-addon2">Search</span>
       </div> --}}
 
-      <div class="card text-white bg-dark mb-3">
+      <div class="card text-white bg-dark">
         <div class="card-body">
-          <h5 class="card-title">Syair Pasaran Lengkap</h5>
+          <img src="/img/2.gif"  class="img-fluid rounded mx-auto d-block" alt="">
+
+          <h5 class="card-title mt-3">Syair Pasaran Lengkap</h5>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"> <a href="/angkasyair?nm_psr=1&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ARTA4D</a></li>
             <li class="list-group-item"> <a href="/angkasyair?nm_psr=2&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair ARWANATOTO</a></li>
@@ -22,9 +24,13 @@
             <li class="list-group-item"> <a href="/angkasyair?nm_psr=11&tgl={{ \Carbon\Carbon::now()->addDays(1)->format('Y-m-d') }}">Angka Syair TSTOTO</a></li>
 
           </ul>
+          <img src="/img/1.jpg"  class="img-fluid rounded mx-auto d-block mt-4" alt="">
+
       </div>
 
-      <div class="card text-white bg-dark my-3">
+    
+
+      <div class="card text-white bg-dark">
         <div class="card-body">
           <h5 class="card-title">Tools L21 Group</h5>
           <ul class="list-group list-group-flush">

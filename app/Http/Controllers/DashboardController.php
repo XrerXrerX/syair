@@ -20,7 +20,7 @@ class DashboardController extends Controller
     {
         return view('dashboard.posts.index', [
             // 'posts' => Syair::where('user_id', auth()->user()->id)->get()
-            'posts' => Syair::latest()->paginate(18)
+            'posts' => Syair::latest('datepost')->paginate(18)
 
         ]);
     }

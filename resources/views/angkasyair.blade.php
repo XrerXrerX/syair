@@ -4,7 +4,6 @@
 @extends('layout.main')
 
 @section('container')
-{{-- @dd($syairs); --}}
 <div class="row">
   
     <div class="col-md-8">
@@ -121,6 +120,8 @@
         @endforeach
         
       </div>
+
+    
       
       <nav aria-label="Page navigation example ">
         <ul class="pagination justify-content-center mt-3">

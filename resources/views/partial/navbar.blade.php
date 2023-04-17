@@ -79,3 +79,12 @@
         </div>
         </div>
       </nav>
+      <div class="marquee-container">
+
+      <div class="speaker-icon">
+        <i class="bi bi-volume-up"></i>
+                </div>
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+      2 Promo terbaru kami siap di claim kapan saja tanpa syarat yang rumit !! | GARANSI UANG KEMBALI jika mengalami kekalahan | Bonus New untuk member baru dan masih banyak promo lagi dari L21Gruop    </marquee>
+
+  </div>
